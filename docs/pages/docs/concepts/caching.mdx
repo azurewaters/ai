@@ -6,7 +6,7 @@ title: Caching Responses
 
 Depending on the type of application you're building, you may want to cache the responses you receive from your AI provider, at least temporarily.
 
-Each stream helper for each provider has special lifecycle callbacks you can use. The one of interest is likely `onCompletion`, which is called when the stream is closed. This is where you can cache the full response.
+Each stream helper for each provider has special lifecycle callbacks you can use. The one of interest is likely `onFinal`, which is called when the stream is closed. This is where you can cache the full response.
 
 ## Example: Vercel KV
 
